@@ -25,7 +25,12 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "node ./bin/dev/compile_coffee"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "lodash": "~2.4.1"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
